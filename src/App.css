@@ -1,27 +1,38 @@
-.App {
-  text-align: center;
-}
+/* .App {
+  
+} */
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#Signup-Form-Container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-
-#Banner-Container {
+  justify-content: space-evenly;
   background: #120F23;
   width: 100%;
   height: 212px;
+  margin: 250px auto;
+}
+
+.signup-form {
+  display: flex;
+}
+
+#H1-Container h1 {
+  font-family: Elaine D02, sans-serif, serif;
+  color: #B6FDBF;
+}
+
+#Sign-Up-Label-Container label {
+  font-family: Azo Sans, sans-serif,serif;
+  color: #94AEBF;
+}
+
+#Email-Container  {
+  display: flex;
+}
+
+#Email-Container input {
+  width: 100%;
+}
+
+#Checkbox-Container small {
+  color: #888888;
 }

@@ -1,11 +1,12 @@
 import React from 'react';
-import  Banner from './components/Banner';
+
 import './App.css';
+import SignUpForm from './components/form/SignUpForm';
 
 function App() {
   return (
     <div className="App">
-      <Banner/>
+      <SignUpForm/>
     </div>
   );
 }
