@@ -14,9 +14,10 @@ const SignUpForm = () => {
                     <Label/>
                     <NextButton/> 
                 </div>
-
-                <CheckBox/>
-                <CheckBoxText/>
+                <div>
+                    <CheckBox/>
+                    <CheckBoxText/>
+                </div>
             </form>
         </div>
     );
