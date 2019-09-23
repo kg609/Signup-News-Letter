@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import H1 from '../text/H1';
 import Label from './Label';
+import Email from '../inputs/Email';
 import NextButton from '../buttons/NextButton';
 import CheckBox from '../inputs/CheckBox';
 import CheckBoxText from '../text/CheckBoxText';
@@ -30,6 +31,7 @@ class SignUpForm extends Component {
                     <div className="signup-form">
                         <H1/>
                         <Label/>
+                        <Email/>
                         <NextButton/> 
                     </div>
                     <div>
