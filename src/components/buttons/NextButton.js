@@ -1,23 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 
- class NextButton  extends Component  {
-     constructor(props) {
-         super(props);
-         this.State = '';
-     }
-    
-    onNextClick()  {
-        return  alert('This function works! I think lol.')
-    }
+const NextButton = () => {
 
-    render() {
         return (
             <div id="Submit-Container">
-                <button onClick={this.onNextClick}>Next</button>
+                <button >Next</button>
             </div>
         );
-    }
-
 
  }
 
