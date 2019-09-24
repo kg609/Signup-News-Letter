@@ -10,8 +10,7 @@ class SignUpForm extends Component {
     constructor(props) {
         super(props);
 
-      this.state = {
-            email: "",
+      this.state = {   
             firstName: "",
             lastName: ""
         }
@@ -19,6 +18,8 @@ class SignUpForm extends Component {
 
     handleClick = (e) =>  {
         e.preventDefault();
+
+       
 
         console.log("Prevented default form submission");
         console.log(this.state);
@@ -31,7 +32,7 @@ class SignUpForm extends Component {
                     <div className="signup-form">
                         <H1/>
                         <Label/>
-                        <Email/>
+                        <Email />
                         <NextButton/> 
                     </div>
                     <div>
