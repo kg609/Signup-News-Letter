@@ -1,36 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 
-class Email extends Component {
-    constructor(props){
-        super(props);
+const Email = (props) => {
 
-        this.state = {
-            email: "",
-        }
-    }
 
-    handleSubmit = () => {
 
-    }
-
-    handleInputChange = (event) => {
-        console.log(event);
-        console.log(event.target.name);
-        console.log(event.target.value);
-
-        this.setState = ({
-            [event.target.name]: event.target.value,
-        });
-    }
-
-    render(){
         return (
             <div id="Email-Container">
-                <input type="email" name="email" placeholder="enter email address" onChange={this.handleInputChange} />
+                <input type="email" name="email" placeholder="enter email address" onChange={props.userEmail} />
             </div>
         );
-    }
 
 }
 

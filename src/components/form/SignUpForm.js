@@ -11,19 +11,34 @@ class SignUpForm extends Component {
         super(props);
 
       this.state = {   
+            email: "",
             firstName: "",
             lastName: ""
         }
     }
 
-    handleClick = (e) =>  {
-        e.preventDefault();
-
-       
-
+    handleClick = (event) =>  {
+        event.preventDefault();
         console.log("Prevented default form submission");
-        console.log(this.state);
-    }
+
+    //     this.setState = ({
+    //                 [event.target.name]: event.target.value,
+    //             });
+    //     console.log(event.target.name);
+    //     console.log(event.target.value);
+   }
+
+    getEmail = (event) => {
+        return this.setState = ({
+            [event.target.name]: event.target.value,
+        });
+        // console.log(event.target.name);
+        // console.log(event.target.value);
+        // console.log(this.setState = ({
+        //     [event.target.name]: event.target.value,
+        // }));
+        }
+    
 
     render() {
         return (
@@ -32,7 +47,7 @@ class SignUpForm extends Component {
                     <div className="signup-form">
                         <H1/>
                         <Label/>
-                        <Email />
+                        <Email userEmail={this.getEmail} />
                         <NextButton/> 
                     </div>
                     <div>
@@ -43,7 +58,7 @@ class SignUpForm extends Component {
             </div>
         );
     }
-
 }
+
 
 export default SignUpForm;
