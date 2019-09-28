@@ -47,6 +47,32 @@
 
 }
 
+#FirstName-Container  {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+#FirstName-Container input {
+  width: 100%;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+#LastName-Container  {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+#LastName-Container input {
+  width: 100%;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 10px;
+}
+
 #Submit-Container {
   display: flex;
   align-items: center;

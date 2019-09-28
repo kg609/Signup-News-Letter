@@ -5,6 +5,8 @@ import Email from '../inputs/Email';
 import NextButton from '../buttons/NextButton';
 import CheckBox from '../inputs/CheckBox';
 import CheckBoxText from '../text/CheckBoxText';
+import FirstName from '../inputs/FirstName';
+import LastName from '../inputs/LastName';
 
 class SignUpForm extends Component {
     constructor(props) {
@@ -48,6 +50,8 @@ class SignUpForm extends Component {
                         <H1/>
                         <Label/>
                         <Email userEmail={this.getEmail} />
+                        <FirstName />
+                        <LastName/>
                         <NextButton/> 
                     </div>
                     <div>
