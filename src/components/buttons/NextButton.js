@@ -1,10 +1,10 @@
 import React from 'react';
 
-const NextButton = () => {
+const NextButton = (props) => {
 
         return (
             <div id="Submit-Container">
-                <button >Next</button>
+                <button onClick={props.nextInputs} >Next</button>
             </div>
         );
 

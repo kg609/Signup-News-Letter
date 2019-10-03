@@ -7,7 +7,7 @@ const FirstName = (props) => {
 
         return (
             <div id="FirstName-Container">
-                <input type="text" name="email" placeholder="First Name" onChange={props.userEmail} />
+                <input type="text" name="FName" placeholder="First Name" onChange={props.firstName} />
             </div>
         );
 

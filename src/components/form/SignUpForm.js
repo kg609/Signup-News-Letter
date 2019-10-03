@@ -10,36 +10,54 @@ import LastName from '../inputs/LastName';
 
 class SignUpForm extends Component {
     constructor(props) {
-        super(props);
+      super(props);
 
       this.state = {   
             email: "",
             firstName: "",
-            lastName: ""
+            lastName: "",
+            show: true
         }
+
     }
 
     handleClick = (event) =>  {
         event.preventDefault();
-        console.log("Prevented default form submission");
 
-    //     this.setState = ({
-    //                 [event.target.name]: event.target.value,
-    //             });
-    //     console.log(event.target.name);
-    //     console.log(event.target.value);
+        this.setState({
+            email: this.handleEmail,
+            firstName: this.handleFNAME,
+            lastName: this.handleLNAME
+         });
+         console.log(this.state.email);
+         console.log(this.state.firstName);
+         console.log(this.state.lastName);
    }
 
-    getEmail = (event) => {
-        return this.setState = ({
-            [event.target.name]: event.target.value,
-        });
+    handleEmail =  (event) => {
+        // console.log(this.state.email);
         // console.log(event.target.name);
         // console.log(event.target.value);
-        // console.log(this.setState = ({
-        //     [event.target.name]: event.target.value,
-        // }));
-        }
+        
+       return  this.setState({ email: event.target.value });
+    }
+
+    handleFNAME =  (event) => {
+        // console.log(this.state.email);
+        // console.log(event.target.name);
+        // console.log(event.target.value);
+        
+       return  this.setState({ firstName: event.target.value });
+    }
+
+    handleLNAME=  (event) => {
+        // console.log(this.state.email);
+        // console.log(event.target.name);
+        // console.log(event.target.value);
+        
+        return this.setState({ lastName: event.target.value });
+    }
+        
     
 
     render() {
@@ -49,10 +67,10 @@ class SignUpForm extends Component {
                     <div className="signup-form">
                         <H1/>
                         <Label/>
-                        <Email userEmail={this.getEmail} />
-                        <FirstName />
-                        <LastName/>
-                        <NextButton/> 
+                        <Email userEmail = {this.handleEmail} />
+                        <FirstName firstName  = {this.handleFNAME} />
+                        <LastName lastName = {this.handleLNAME} />
+                        <NextButton /> 
                     </div>
                     <div>
                         <CheckBox/>
