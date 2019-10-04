@@ -16,7 +16,7 @@ class SignUpForm extends Component {
             email: "",
             firstName: "",
             lastName: "",
-            show: true
+            showContent: true
         }
 
     }
@@ -27,11 +27,14 @@ class SignUpForm extends Component {
         this.setState({
             email: this.handleEmail,
             firstName: this.handleFNAME,
-            lastName: this.handleLNAME
+            lastName: this.handleLNAME,
+            showContent: !this.state.showContent
          });
-         console.log(this.state.email);
-         console.log(this.state.firstName);
-         console.log(this.state.lastName);
+
+        // console.log(this.state.email);
+        // console.log(this.state.firstName);
+        // console.log(this.state.lastName);
+        // console.log(this.state.showContent);
    }
 
     handleEmail =  (event) => {
@@ -57,6 +60,12 @@ class SignUpForm extends Component {
         
         return this.setState({ lastName: event.target.value });
     }
+
+    // handleToggleInputs = () => {
+    //     this.setState({ show: !this.state.show });
+
+    //     // console.log(this.state.show);
+    // }
         
     
 
@@ -67,10 +76,17 @@ class SignUpForm extends Component {
                     <div className="signup-form">
                         <H1/>
                         <Label/>
-                        <Email userEmail = {this.handleEmail} />
-                        <FirstName firstName  = {this.handleFNAME} />
-                        <LastName lastName = {this.handleLNAME} />
-                        <NextButton /> 
+                        { this.state.showContent ?  (
+                        <div>
+                            <Email userEmail = {this.handleEmail} />
+                        </div>
+                        )
+                        :  (
+                        <div>
+                            <FirstName firstName  = {this.handleFNAME} />
+                            <LastName lastName = {this.handleLNAME} />
+                        </div> ) }
+                        <NextButton  /> 
                     </div>
                     <div>
                         <CheckBox/>
