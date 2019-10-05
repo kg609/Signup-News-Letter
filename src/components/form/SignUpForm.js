@@ -1,12 +1,9 @@
+/* eslint-disable default-case */
 import React, { Component } from 'react';
-import H1 from '../text/H1';
-import Label from './Label';
-import Email from '../inputs/Email';
-import NextButton from '../buttons/NextButton';
-import CheckBox from '../inputs/CheckBox';
-import CheckBoxText from '../text/CheckBoxText';
-import FirstName from '../inputs/FirstName';
-import LastName from '../inputs/LastName';
+
+import UserFullNameForm from './UserFullNameForm.';
+import UserEmailForm from './UserEmailForm';
+import ThankYouPage from '../form/ThankYouPage';
 
 class SignUpForm extends Component {
     constructor(props) {
@@ -16,69 +13,66 @@ class SignUpForm extends Component {
             email: "",
             firstName: "",
             lastName: "",
-            show: true
+            step: 1
+            // showContent: true
         }
-
     }
 
-    handleClick = (event) =>  {
-        event.preventDefault();
+    handleClick = () =>  {
 
         this.setState({
             email: this.handleEmail,
             firstName: this.handleFNAME,
-            lastName: this.handleLNAME
+            lastName: this.handleLNAME,
+            step: this.state.step + 1
+            // showContent: !this.state.showContent
          });
-         console.log(this.state.email);
-         console.log(this.state.firstName);
-         console.log(this.state.lastName);
+
+        console.log("user's email: " + this.state.email);
+        console.log("user's first name: " +this.state.firstName);
+        console.log("user's lastname: " +this.state.lastName);
+        // console.log(this.state.showContent);
    }
 
     handleEmail =  (event) => {
-        // console.log(this.state.email);
-        // console.log(event.target.name);
-        // console.log(event.target.value);
-        
        return  this.setState({ email: event.target.value });
     }
 
     handleFNAME =  (event) => {
-        // console.log(this.state.email);
-        // console.log(event.target.name);
-        // console.log(event.target.value);
-        
        return  this.setState({ firstName: event.target.value });
     }
 
-    handleLNAME=  (event) => {
-        // console.log(this.state.email);
-        // console.log(event.target.name);
-        // console.log(event.target.value);
-        
+    handleLNAME = (event) => {
         return this.setState({ lastName: event.target.value });
+       
     }
-        
+    
+    nextStep = () => {
+        return this.setState({ step: this.state.step + 1 })
+    }
     
 
     render() {
-        return (
-            <div id="Signup-Form-Container">
-                <form onSubmit={this.handleClick}>
-                    <div className="signup-form">
-                        <H1/>
-                        <Label/>
-                        <Email userEmail = {this.handleEmail} />
-                        <FirstName firstName  = {this.handleFNAME} />
-                        <LastName lastName = {this.handleLNAME} />
-                        <NextButton /> 
-                    </div>
-                    <div>
-                        <CheckBox/>
-                        <CheckBoxText/>
-                    </div>
-                </form>
-            </div>
-        );
+        switch(this.state.step) {
+            case 1:
+            return <UserEmailForm
+                         email = {this.handleEmail}
+                         nextStep = {this.nextStep}
+                         />
+
+
+            case 2:
+                return<UserFullNameForm
+                            firstName = {this.handleFNAME}
+                            lastName = {this.handleLNAME}
+                            nextStep = {this.nextStep}
+                            handleClick = {this.handleClick}
+                            />;
+                
+
+            case 3: 
+            return  <ThankYouPage/>
+        }
     }
 }
 
