@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 
 import H1 from '../text/H1';
 import Label from './Label';
@@ -10,22 +10,33 @@ import LastName from '../inputs/LastName';
 
 
 
-const UserFullNameForm = (props) => {
-    return (
-          <div id="Signup-Form-Container">
+class UserFullNameForm extends Component {
+    continue = (e) => {
+        e.preventDefault();
+
+        this.props.nextStep();
+        this.props.handleClick();
+    }
+
+    render(){
+        return (
+                <div id="Signup-Form-Container">
+                     <form onSubmit={this.continue}>
                         <div className="signup-form">
                             <H1/>
                             <Label/>
-                            <FirstName firstName  = {props.firstName} />
-                            <LastName lastName = {props.lastName} />
-                            <NextButton  /> 
+                            <FirstName firstName  = {this.props.firstName} />
+                            <LastName lastName = {this.props.lastName} />
+                            <NextButton onClick= {this.props.handleClick}  /> 
                         </div>
                         <div>
                             <CheckBox/>
                             <CheckBoxText/>
                         </div>
+                    </form>
                 </div>
-    );
+        );
+    }
 }
 
 export default UserFullNameForm;

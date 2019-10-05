@@ -18,8 +18,7 @@ class SignUpForm extends Component {
         }
     }
 
-    handleClick = (event) =>  {
-        event.preventDefault();
+    handleClick = () =>  {
 
         this.setState({
             email: this.handleEmail,
@@ -29,9 +28,9 @@ class SignUpForm extends Component {
             // showContent: !this.state.showContent
          });
 
-        // console.log(this.state.email);
-        // console.log(this.state.firstName);
-        // console.log(this.state.lastName);
+        console.log("user's email: " + this.state.email);
+        console.log("user's first name: " +this.state.firstName);
+        console.log("user's lastname: " +this.state.lastName);
         // console.log(this.state.showContent);
    }
 
@@ -56,25 +55,19 @@ class SignUpForm extends Component {
     render() {
         switch(this.state.step) {
             case 1:
-            return  (
-                    <form onSubmit={this.handleClick}>
-                        <UserEmailForm
+            return <UserEmailForm
                          email = {this.handleEmail}
+                         nextStep = {this.nextStep}
                          />
-                    </form>
-            )
 
 
             case 2:
-                return (
-                        <form onSubmit={this.handleClick}>
-                        <UserFullNameForm
+                return<UserFullNameForm
                             firstName = {this.handleFNAME}
                             lastName = {this.handleLNAME}
-                            onSubmit = {this.handleClick}
+                            nextStep = {this.nextStep}
+                            handleClick = {this.handleClick}
                             />;
-                        </form>
-                )
                 
 
             case 3: 
