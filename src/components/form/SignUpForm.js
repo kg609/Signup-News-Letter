@@ -1,12 +1,9 @@
+/* eslint-disable default-case */
 import React, { Component } from 'react';
-import H1 from '../text/H1';
-import Label from './Label';
-import Email from '../inputs/Email';
-import NextButton from '../buttons/NextButton';
-import CheckBox from '../inputs/CheckBox';
-import CheckBoxText from '../text/CheckBoxText';
-import FirstName from '../inputs/FirstName';
-import LastName from '../inputs/LastName';
+
+import UserFullNameForm from './UserFullNameForm.';
+import UserEmailForm from './UserEmailForm';
+import ThankYouPage from '../form/ThankYouPage';
 
 class SignUpForm extends Component {
     constructor(props) {
@@ -16,9 +13,9 @@ class SignUpForm extends Component {
             email: "",
             firstName: "",
             lastName: "",
-            showContent: true
+            step: 1
+            // showContent: true
         }
-
     }
 
     handleClick = (event) =>  {
@@ -28,7 +25,8 @@ class SignUpForm extends Component {
             email: this.handleEmail,
             firstName: this.handleFNAME,
             lastName: this.handleLNAME,
-            showContent: !this.state.showContent
+            step: this.state.step + 1
+            // showContent: !this.state.showContent
          });
 
         // console.log(this.state.email);
@@ -38,63 +36,50 @@ class SignUpForm extends Component {
    }
 
     handleEmail =  (event) => {
-        // console.log(this.state.email);
-        // console.log(event.target.name);
-        // console.log(event.target.value);
-        
        return  this.setState({ email: event.target.value });
     }
 
     handleFNAME =  (event) => {
-        // console.log(this.state.email);
-        // console.log(event.target.name);
-        // console.log(event.target.value);
-        
        return  this.setState({ firstName: event.target.value });
     }
 
-    handleLNAME=  (event) => {
-        // console.log(this.state.email);
-        // console.log(event.target.name);
-        // console.log(event.target.value);
-        
+    handleLNAME = (event) => {
         return this.setState({ lastName: event.target.value });
+       
     }
-
-    // handleToggleInputs = () => {
-    //     this.setState({ show: !this.state.show });
-
-    //     // console.log(this.state.show);
-    // }
-        
+    
+    nextStep = () => {
+        return this.setState({ step: this.state.step + 1 })
+    }
     
 
     render() {
-        return (
-            <div id="Signup-Form-Container">
-                <form onSubmit={this.handleClick}>
-                    <div className="signup-form">
-                        <H1/>
-                        <Label/>
-                        { this.state.showContent ?  (
-                        <div>
-                            <Email userEmail = {this.handleEmail} />
-                        </div>
-                        )
-                        :  (
-                        <div>
-                            <FirstName firstName  = {this.handleFNAME} />
-                            <LastName lastName = {this.handleLNAME} />
-                        </div> ) }
-                        <NextButton  /> 
-                    </div>
-                    <div>
-                        <CheckBox/>
-                        <CheckBoxText/>
-                    </div>
-                </form>
-            </div>
-        );
+        switch(this.state.step) {
+            case 1:
+            return  (
+                    <form onSubmit={this.handleClick}>
+                        <UserEmailForm
+                         email = {this.handleEmail}
+                         />
+                    </form>
+            )
+
+
+            case 2:
+                return (
+                        <form onSubmit={this.handleClick}>
+                        <UserFullNameForm
+                            firstName = {this.handleFNAME}
+                            lastName = {this.handleLNAME}
+                            onSubmit = {this.handleClick}
+                            />;
+                        </form>
+                )
+                
+
+            case 3: 
+            return  <ThankYouPage/>
+        }
     }
 }
 
