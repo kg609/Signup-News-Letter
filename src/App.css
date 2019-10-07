@@ -9,6 +9,7 @@
 
 .signup-form {
   display: flex;
+  position: relative;
 }
 
 #H1-Container {
@@ -24,7 +25,8 @@
 
 #Sign-Up-Label-Container {
   position: absolute;
-  right: 500px;
+  left: 23%;
+  /* right: 500px; */
   margin: 10px  auto;
 }
 
@@ -47,31 +49,38 @@
 
 }
 
+.input-names-container {
+  display: flex;
+  align-items: center;
+}
+
 #FirstName-Container  {
-  display: flex;
-  align-items: center;
-  width: 50%;
+  /* width: 50%; */
+  margin-right: 10px;
 }
 
-#FirstName-Container input {
+#FirstName-Container input, #LastName-Container input {
+  /* width: 100%; */
+  border-color: transparent;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 10px;
+  background: rgba(102, 102, 102, 0.3);
+  color: #fff;
+  font-family: Azo Sans;
+  font-size: 15px;
+}
+
+/* #LastName-Container  {
+  width: 50%;
+} */
+
+/* #LastName-Container input {
   width: 100%;
   border-radius: 5px;
   margin: 10px 0;
   padding: 10px;
-}
-
-#LastName-Container  {
-  display: flex;
-  align-items: center;
-  width: 50%;
-}
-
-#LastName-Container input {
-  width: 100%;
-  border-radius: 5px;
-  margin: 10px 0;
-  padding: 10px;
-}
+} */
 
 #Submit-Container {
   display: flex;
@@ -114,14 +123,6 @@
       flex-direction: column;
       align-items: center;
       width: 90%;
-  }
-
-  #H1-Container {
-   
-  }
-
-  #H1-Container h1 {
-     
   }
 
   #Sign-Up-Label-Container {

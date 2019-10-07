@@ -25,8 +25,10 @@ class UserFullNameForm extends Component {
                         <div className="signup-form">
                             <H1/>
                             <Label/>
-                            <FirstName firstName  = {this.props.firstName} />
-                            <LastName lastName = {this.props.lastName} />
+                            <div className="input-names-container">
+                                <FirstName firstName  = {this.props.firstName} />
+                                <LastName lastName = {this.props.lastName} />
+                            </div>
                             <NextButton onClick= {this.props.handleClick}  /> 
                         </div>
                         <div>
