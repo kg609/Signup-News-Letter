@@ -33,6 +33,7 @@
 #Sign-Up-Label-Container label {
   font-family: Azo Sans, sans-serif,serif;
   color: #94AEBF;
+  font-weight: bold;
 }
 
 #Email-Container  {
@@ -44,9 +45,13 @@
 #Email-Container input {
   width: 100%;
   border-radius: 5px;
+  border-color: transparent;
   margin: 10px 0;
   padding: 10px;
-
+  background: rgba(102, 102, 102, 0.3);
+  color: #fff;
+  font-family: Azo Sans;
+  font-size: 15px;
 }
 
 .input-names-container {
@@ -71,16 +76,13 @@
   font-size: 15px;
 }
 
-/* #LastName-Container  {
-  width: 50%;
-} */
-
-/* #LastName-Container input {
-  width: 100%;
-  border-radius: 5px;
-  margin: 10px 0;
-  padding: 10px;
-} */
+.thank-you-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: Azo Sans, sans-serif, serif;
+  color: #94AEBF;
+}
 
 #Submit-Container {
   display: flex;
@@ -123,6 +125,7 @@
       flex-direction: column;
       align-items: center;
       width: 90%;
+      margin: auto;
   }
 
   #Sign-Up-Label-Container {
@@ -152,7 +155,7 @@
   }
 
   .thank-you-message {
-    color: #FFF;
+    align-items: center;
   }
 
 }

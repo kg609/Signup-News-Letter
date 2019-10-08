@@ -23,8 +23,8 @@ class UserFullNameForm extends Component {
                 <div id="Signup-Form-Container">
                      <form onSubmit={this.continue}>
                         <div className="signup-form">
-                            <H1/>
-                            <Label/>
+                            <H1 newH1 = {this.props.newHeader} />
+                            <Label Text = {this.props.labelText}/>
                             <div className="input-names-container">
                                 <FirstName firstName  = {this.props.firstName} />
                                 <LastName lastName = {this.props.lastName} />
