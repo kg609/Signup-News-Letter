@@ -1,6 +1,7 @@
 #Signup-Form-Container {
   display: flex;
   justify-content: center;
+  align-items: center;
   background: #120F23;
   width: 100%;
   height: 212px;
@@ -9,6 +10,8 @@
 
 .signup-form {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   position: relative;
 }
 
@@ -25,8 +28,7 @@
 
 #Sign-Up-Label-Container {
   position: absolute;
-  left: 23%;
-  /* right: 500px; */
+  left: 35%;
   margin: 10px  auto;
 }
 
@@ -104,14 +106,31 @@
 }
 
 #Checkbox-Container {
-  margin-left: 180px;
+  width: 50%;
+  margin: -25px -120px 0 0;
 }
 
-#Checkbox-Text-Container {
+#Checkbox-Container small{
+  padding-left: 5px;
+}
+
+
+#Checkbox-Container  span{
+  display: block;
+  padding-left: 22px;
+}
+
+
+
+/* #Checkbox-Text-Container {
   margin-left: 200px;
   margin-top: -18px;
   color: #888888;
   width: 50%;
+} */
+
+.checkbox-text{
+  color: #888888;
 }
 
 
@@ -129,6 +148,8 @@
   }
 
   #Sign-Up-Label-Container {
+    display: flex;
+    justify-content: center;
     position: static;
     width: 90%;
   }
@@ -138,21 +159,43 @@
     width: 90%;
   }
 
+  .input-names-container {
+    width: 90%;
+    justify-content: space-evenly;
+  }
+
+  #FirstName-Container, #LastName-Container {
+    width: 50%;
+  }
+
+  #FirstName-Container input, #LastName-Container input {
+    width: 90%;
+  }
+
   #Submit-Container {
     width: 90%;
     padding: 0;
 }
 
   #Checkbox-Container {
-      width: 100%;
-      margin-left: 20px;
-  }
+      width: 90%;
+      margin: 10px 0;
+  } 
 
-  #Checkbox-Text-Container {
+  #Checkbox-Container  small{
+    padding-left: 10px;
+} 
+
+#Checkbox-Container  span{
+  display: inline-block;
+  padding-left:  0;
+} 
+
+  /* #Checkbox-Text-Container {
     margin-left: 30px;
     padding-left: 25px;
     width: 75%;
-  }
+  } */
 
   .thank-you-message {
     align-items: center;

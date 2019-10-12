@@ -3,8 +3,6 @@ import React, {Component} from 'react';
 import H1 from '../text/H1';
 import Label from './Label';
 import NextButton from '../buttons/NextButton';
-import CheckBox from '../inputs/CheckBox';
-import CheckBoxText from '../text/CheckBoxText';
 import FirstName from '../inputs/FirstName';
 import LastName from '../inputs/LastName';
 
@@ -29,12 +27,9 @@ class UserFullNameForm extends Component {
                                 <FirstName firstName  = {this.props.firstName} />
                                 <LastName lastName = {this.props.lastName} />
                             </div>
-                            <NextButton onClick= {this.props.handleClick}  /> 
+                                <NextButton onClick= {this.props.handleClick}  />
                         </div>
-                        <div>
-                            <CheckBox/>
-                            <CheckBoxText/>
-                        </div>
+                        
                     </form>
                 </div>
         );

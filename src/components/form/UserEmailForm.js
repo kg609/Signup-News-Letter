@@ -4,7 +4,6 @@ import H1 from '../text/H1';
 import Label from './Label';
 import NextButton from '../buttons/NextButton';
 import CheckBox from '../inputs/CheckBox';
-import CheckBoxText from '../text/CheckBoxText';
 import Email from '../inputs/Email';
 
 
@@ -26,10 +25,7 @@ class UserEmailForm extends Component {
                             <Label Text = {this.props.labelText} />
                             <Email userEmail = {this.props.email} />
                             <NextButton  /> 
-                        </div>
-                        <div>
                             <CheckBox/>
-                            <CheckBoxText/>
                         </div>
                     </form>
             </div>
