@@ -29,7 +29,7 @@ class SignUpForm extends Component {
          });
 
         console.log("user's email: " + this.state.email);
-        console.log("user's first name: " +this.state.firstName);
+        console.log("user's firstname: " +this.state.firstName);
         console.log("user's lastname: " +this.state.lastName);
         // console.log(this.state.showContent);
    }
@@ -58,6 +58,8 @@ class SignUpForm extends Component {
             return <UserEmailForm
                          email = {this.handleEmail}
                          nextStep = {this.nextStep}
+                         labelText = "SIGN UP FOR THE TLC NEWSLETTER."
+                         newHeader = "join the list"
                          />
 
 
@@ -66,12 +68,16 @@ class SignUpForm extends Component {
                             firstName = {this.handleFNAME}
                             lastName = {this.handleLNAME}
                             nextStep = {this.nextStep}
+                            labelText = "ALMOST DONE PLEASE ENTER YOUR FIRST AND LAST NAME."
+                            newHeader = "join the list"
                             handleClick = {this.handleClick}
                             />;
                 
 
             case 3: 
-            return  <ThankYouPage/>
+            return  <ThankYouPage
+                        newHeader = "congratulations!"
+                        />
         }
     }
 }

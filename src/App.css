@@ -1,6 +1,7 @@
 #Signup-Form-Container {
   display: flex;
   justify-content: center;
+  align-items: center;
   background: #120F23;
   width: 100%;
   height: 212px;
@@ -9,6 +10,9 @@
 
 .signup-form {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
 }
 
 #H1-Container {
@@ -24,13 +28,14 @@
 
 #Sign-Up-Label-Container {
   position: absolute;
-  right: 500px;
+  left: 35%;
   margin: 10px  auto;
 }
 
 #Sign-Up-Label-Container label {
   font-family: Azo Sans, sans-serif,serif;
   color: #94AEBF;
+  font-weight: bold;
 }
 
 #Email-Container  {
@@ -42,35 +47,43 @@
 #Email-Container input {
   width: 100%;
   border-radius: 5px;
+  border-color: transparent;
   margin: 10px 0;
   padding: 10px;
+  background: rgba(102, 102, 102, 0.3);
+  color: #fff;
+  font-family: Azo Sans;
+  font-size: 15px;
+}
 
+.input-names-container {
+  display: flex;
+  align-items: center;
 }
 
 #FirstName-Container  {
-  display: flex;
-  align-items: center;
-  width: 50%;
+  /* width: 50%; */
+  margin-right: 10px;
 }
 
-#FirstName-Container input {
-  width: 100%;
+#FirstName-Container input, #LastName-Container input {
+  /* width: 100%; */
+  border-color: transparent;
   border-radius: 5px;
   margin: 10px 0;
   padding: 10px;
+  background: rgba(102, 102, 102, 0.3);
+  color: #fff;
+  font-family: Azo Sans;
+  font-size: 15px;
 }
 
-#LastName-Container  {
+.thank-you-message {
   display: flex;
-  align-items: center;
-  width: 50%;
-}
-
-#LastName-Container input {
-  width: 100%;
-  border-radius: 5px;
-  margin: 10px 0;
-  padding: 10px;
+  flex-direction: column;
+  justify-content: center;
+  font-family: Azo Sans, sans-serif, serif;
+  color: #94AEBF;
 }
 
 #Submit-Container {
@@ -93,14 +106,31 @@
 }
 
 #Checkbox-Container {
-  margin-left: 180px;
+  width: 50%;
+  margin: -25px -120px 0 0;
 }
 
-#Checkbox-Text-Container {
+#Checkbox-Container small{
+  padding-left: 5px;
+}
+
+
+#Checkbox-Container  span{
+  display: block;
+  padding-left: 22px;
+}
+
+
+
+/* #Checkbox-Text-Container {
   margin-left: 200px;
   margin-top: -18px;
   color: #888888;
   width: 50%;
+} */
+
+.checkbox-text{
+  color: #888888;
 }
 
 
@@ -114,17 +144,12 @@
       flex-direction: column;
       align-items: center;
       width: 90%;
-  }
-
-  #H1-Container {
-   
-  }
-
-  #H1-Container h1 {
-     
+      margin: auto;
   }
 
   #Sign-Up-Label-Container {
+    display: flex;
+    justify-content: center;
     position: static;
     width: 90%;
   }
@@ -134,24 +159,46 @@
     width: 90%;
   }
 
+  .input-names-container {
+    width: 90%;
+    justify-content: space-evenly;
+  }
+
+  #FirstName-Container, #LastName-Container {
+    width: 50%;
+  }
+
+  #FirstName-Container input, #LastName-Container input {
+    width: 90%;
+  }
+
   #Submit-Container {
     width: 90%;
     padding: 0;
 }
 
   #Checkbox-Container {
-      width: 100%;
-      margin-left: 20px;
-  }
+      width: 90%;
+      margin: 10px 0;
+  } 
 
-  #Checkbox-Text-Container {
+  #Checkbox-Container  small{
+    padding-left: 10px;
+} 
+
+#Checkbox-Container  span{
+  display: inline-block;
+  padding-left:  0;
+} 
+
+  /* #Checkbox-Text-Container {
     margin-left: 30px;
     padding-left: 25px;
     width: 75%;
-  }
+  } */
 
   .thank-you-message {
-    color: #FFF;
+    align-items: center;
   }
 
 }
