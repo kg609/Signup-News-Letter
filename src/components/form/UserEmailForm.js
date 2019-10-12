@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import H1 from '../text/H1';
 import Label from './Label';
 import NextButton from '../buttons/NextButton';
-import CheckBox from '../inputs/CheckBox';
+import CheckBox from '../inputs/Checkbox';
 import Email from '../inputs/Email';
 
 
