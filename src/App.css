@@ -28,7 +28,7 @@
 
 #Sign-Up-Label-Container {
   position: absolute;
-  left: 35%;
+  left: 31%;
   margin: 10px  auto;
 }
 
@@ -187,7 +187,7 @@
 } 
 
 #Checkbox-Container  span{
-  display: inline-block;
+  display: inline;
   padding-left:  0;
 } 
 
@@ -199,6 +199,7 @@
 
   .thank-you-message {
     align-items: center;
+    text-align: center;
   }
 
 }
