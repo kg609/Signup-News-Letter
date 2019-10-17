@@ -23,7 +23,7 @@ class UserEmailForm extends Component {
                         <div className="signup-form">
                             <H1 newH1 = {this.props.newHeader} />
                             <Label Text = {this.props.labelText} />
-                            <Email userEmail = {this.props.email} />
+                            <Email userEmail = {this.props.email}  />
                             <NextButton  /> 
                             <CheckBox/>
                         </div>
