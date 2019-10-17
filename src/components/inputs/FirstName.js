@@ -7,7 +7,7 @@ const FirstName = (props) => {
 
         return (
             <div id="FirstName-Container">
-                <input type="text" name="FName" placeholder="First Name" onChange={props.firstName} />
+                <input type="text" name="FName" placeholder="First Name" onChange={props.firstName}  required />
             </div>
         );
 

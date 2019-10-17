@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import H1 from '../text/H1';
 import Label from './Label';
 import NextButton from '../buttons/NextButton';
-import CheckBox from '../inputs/CheckBox';
+import CheckBox from '../inputs/Checkbox';
 import Email from '../inputs/Email';
 
 
@@ -23,7 +23,7 @@ class UserEmailForm extends Component {
                         <div className="signup-form">
                             <H1 newH1 = {this.props.newHeader} />
                             <Label Text = {this.props.labelText} />
-                            <Email userEmail = {this.props.email} />
+                            <Email userEmail = {this.props.email}  />
                             <NextButton  /> 
                             <CheckBox/>
                         </div>
