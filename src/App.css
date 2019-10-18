@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: "Elaine_D02";
   src: url("https://pedantic-agnesi-e27e88.netlify.com/css/fonts/Elaine_D02.eot");
   src: 
@@ -14,7 +14,7 @@
     url("https://pedantic-agnesi-e27e88.netlify.com/css/fonts/Azo-Sans.woff") format("woff"),
     url("https://pedantic-agnesi-e27e88.netlify.com/css/fonts/Azo-Sans.otf") format("opentype"),
     url("https://pedantic-agnesi-e27e88.netlify.com/css/fonts/Azo-Sans.svg") format("svg");
-    }
+    } */
 
 body {
   margin: 0;
@@ -43,7 +43,7 @@ body {
 }
 
 #H1-Container h1 {
-  font-family: "Elaine D02", sans-serif, serif;
+  font-family: "Elaine_D02", sans-serif, serif;
   color: #B6FDBF;
   font-size: 2.5rem;
 }
@@ -55,7 +55,7 @@ body {
 }
 
 #Sign-Up-Label-Container label {
-  font-family: "Azo Sans", sans-serif,serif;
+  font-family: "Azo-Sans", sans-serif,serif;
   color: #94AEBF;
   font-weight: bold;
 }
