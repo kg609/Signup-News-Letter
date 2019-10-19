@@ -1,20 +1,21 @@
 @font-face {
   font-family: "Elaine D02";
-  src: url("https://pedantic-agnesi-e27e88.netlify.com/css/fonts/Elaine_D02.eot");
+  src: url("https://pedantic-agnesi-e27e88.netlify.com/css/fonts/ElaineD02.eot");
   src: 
-  url("https://pedantic-agnesi-e27e88.netlify.com/css/fonts/Elaine_D02.woff")format("woff"),
-  url("https://pedantic-agnesi-e27e88.netlify.com/css/fonts/Elaine_D02.otf")format("opentype"),
-  url("https://pedantic-agnesi-e27e88.netlify.com/css/fonts/Elaine_D02.svg")format("svg");
+  url("https://pedantic-agnesi-e27e88.netlify.com/css/fonts/Elaine D02.ttf") format("ttf"),
+  url("https://pedantic-agnesi-e27e88.netlify.com/css/fonts/Elaine D02.woff")format("woff"),
+  url("https://pedantic-agnesi-e27e88.netlify.com/css/fonts/Elaine D02.otf")format("opentype"),
+  url("https://pedantic-agnesi-e27e88.netlify.com/css/fonts/Elaine D02.svg")format("svg");
   }
 
   @font-face {
     font-family: "Azo Sans";
-    src: url("https://pedantic-agnesi-e27e88.netlify.com/css/fonts/Azo-Sans.eot");
+    src: url("https://pedantic-agnesi-e27e88.netlify.com/css/fonts/Azo Sans.eot");
     src: 
-    url("https://pedantic-agnesi-e27e88.netlify.com/css/fonts/Azo-Sans.ttf") format("ttf"),
-    url("https://pedantic-agnesi-e27e88.netlify.com/css/fonts/Azo-Sans.woff")format("woff"),
-    url("https://pedantic-agnesi-e27e88.netlify.com/css/fonts/Azo-Sans.otf")format("opentype"),
-    url("https://pedantic-agnesi-e27e88.netlify.com/css/fonts/Azo-Sans.svg")format("svg");
+    url("https://pedantic-agnesi-e27e88.netlify.com/css/fonts/Azo Sans.ttf") format("ttf"),
+    url("https://pedantic-agnesi-e27e88.netlify.com/css/fonts/Azo Sans.woff")format("woff"),
+    url("https://pedantic-agnesi-e27e88.netlify.com/css/fonts/Azo Sans.otf")format("opentype"),
+    url("https://pedantic-agnesi-e27e88.netlify.com/css/fonts/Azo Sans.svg")format("svg");
     }
 
 body {
