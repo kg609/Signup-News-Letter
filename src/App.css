@@ -46,19 +46,20 @@ body {
 #H1-Container h1 {
   font-family: "Elaine_D02";
   color: #B6FDBF;
-  font-size: 2.5rem;
+  font-size: 60px;
 }
 
 #Sign-Up-Label-Container {
   position: absolute;
-  left: 31%;
-  margin: 10px  auto;
+  left: 36%;
+  margin: 30px auto 0;
 }
 
 #Sign-Up-Label-Container label {
   font-family: "Azo-Sans";
   color: #94AEBF;
   font-weight: bold;
+  font-size: 20px;
 }
 
 #Email-Container  {
@@ -116,7 +117,7 @@ body {
 }
 
 #Submit-Container button {
-  padding: 5px 30px;
+  padding: 8px 20px;
   width: 100%;
   background: red;
   border: 1px solid red;
@@ -129,12 +130,13 @@ body {
 }
 
 #Checkbox-Container {
-  width: 50%;
-  margin: -25px -120px 0 0;
+width: 39%;
+margin: -50px -120px 0 0;
 }
 
 #Checkbox-Container small{
   padding-left: 5px;
+  font-family: "Azo Sans";
 }
 
 
@@ -143,21 +145,12 @@ body {
   padding-left: 22px;
 }
 
-
-
-/* #Checkbox-Text-Container {
-  margin-left: 200px;
-  margin-top: -18px;
-  color: #888888;
-  width: 50%;
-} */
-
 .checkbox-text{
   color: #888888;
 }
 
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1060px) {
 
   #Signup-Form-Container {
     height: 500px;
@@ -170,16 +163,29 @@ body {
       margin: auto;
   }
 
+  #H1-Container h1 {
+    font-size: 36px;
+  }
+
   #Sign-Up-Label-Container {
     display: flex;
     justify-content: center;
     position: static;
     width: 90%;
+    text-align: center;
+  }
+
+  #Sign-Up-Label-Container label, #Submit-Container button {
+   font-size: 16px;
   }
 
   #Email-Container {
     display: flex;
     width: 90%;
+  }
+
+  #Email-Container input,  #Email-Container input::placeholder {
+    font-size: 14px;
   }
 
   .input-names-container {
@@ -207,18 +213,13 @@ body {
 
   #Checkbox-Container  small{
     padding-left: 10px;
+    font-size: 12px;
 } 
 
 #Checkbox-Container  span{
   display: inline;
   padding-left:  0;
 } 
-
-  /* #Checkbox-Text-Container {
-    margin-left: 30px;
-    padding-left: 25px;
-    width: 75%;
-  } */
 
   .thank-you-message {
     align-items: center;
