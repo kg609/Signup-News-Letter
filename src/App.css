@@ -76,7 +76,7 @@ body {
   padding: 10px;
   background: rgba(102, 102, 102, 0.3);
   color: #fff;
-  font-family: "Azo Sans";
+  font-family: "Azo-Sans";
   font-size: 15px;
 }
 
@@ -98,7 +98,7 @@ body {
   padding: 10px;
   background: rgba(102, 102, 102, 0.3);
   color: #fff;
-  font-family: "Azo Sans";
+  font-family: "Azo-Sans";
   font-size: 15px;
 }
 
@@ -106,7 +106,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-family: "Azo Sans", sans-serif, serif;
+  font-family: "Azo-Sans", sans-serif, serif;
   color: #94AEBF;
 }
 
@@ -123,7 +123,7 @@ body {
   border: 1px solid red;
   border-radius: 5px;
   color: white;
-  font-family: "Azo Sans";
+  font-family: "Azo-Sans";
   font-weight: bold;
   font-size: 20px;
   cursor: pointer;
@@ -136,7 +136,7 @@ margin: -50px -120px 0 0;
 
 #Checkbox-Container small{
   padding-left: 5px;
-  font-family: "Azo Sans";
+  font-family: "Azo-Sans";
 }
 
 
