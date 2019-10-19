@@ -1,21 +1,21 @@
 @font-face {
-  font-family: "Elaine D02";
-  src: url("https://pedantic-agnesi-e27e88.netlify.com/css/fonts/ElaineD02.eot");
+  font-family: "Elaine_D02";
+  src: url("./css/Fonts/Elaine_D02.eot");
   src: 
-  url("https://pedantic-agnesi-e27e88.netlify.com/css/fonts/Elaine D02.ttf") format("ttf"),
-  url("https://pedantic-agnesi-e27e88.netlify.com/css/fonts/Elaine D02.woff")format("woff"),
-  url("https://pedantic-agnesi-e27e88.netlify.com/css/fonts/Elaine D02.otf")format("opentype"),
-  url("https://pedantic-agnesi-e27e88.netlify.com/css/fonts/Elaine D02.svg")format("svg");
+  url("./css/Fonts/Azo-Sans/Azo-Sans.ttf") format("ttf"),
+  url("./css/Fonts/Elaine_D02.woff")format("woff"),
+  url("./css/Fonts/Elaine_D02.otf")format("opentype"),
+  url("./css/Fonts/Elaine_D02.svg")format("svg");
   }
 
   @font-face {
-    font-family: "Azo Sans";
-    src: url("https://pedantic-agnesi-e27e88.netlify.com/css/fonts/Azo Sans.eot");
+    font-family: "Azo-Sans";
+    src: url("./css/Fonts/Azo-Sans.eot");
     src: 
-    url("https://pedantic-agnesi-e27e88.netlify.com/css/fonts/Azo Sans.ttf") format("ttf"),
-    url("https://pedantic-agnesi-e27e88.netlify.com/css/fonts/Azo Sans.woff")format("woff"),
-    url("https://pedantic-agnesi-e27e88.netlify.com/css/fonts/Azo Sans.otf")format("opentype"),
-    url("https://pedantic-agnesi-e27e88.netlify.com/css/fonts/Azo Sans.svg")format("svg");
+    url("./css/Fonts/Azo-Sans.ttf") format("ttf"),
+    url("./css/Fonts/Azo-Sans.woff")format("woff"),
+    url("./css/Fonts/Azo-Sans.otf")format("opentype"),
+    url("./css/Fonts/Azo-Sans.svg")format("svg");
     }
 
 body {
@@ -45,7 +45,7 @@ body {
 }
 
 #H1-Container h1 {
-  font-family: "Elaine D02";
+  font-family: "Elaine_D02";
   color: #B6FDBF;
   font-size: 2.5rem;
 }
@@ -57,7 +57,7 @@ body {
 }
 
 #Sign-Up-Label-Container label {
-  font-family: "Azo Sans";
+  font-family: "Azo-Sans";
   color: #94AEBF;
   font-weight: bold;
 }
