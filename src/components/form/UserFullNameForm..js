@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
 import H1 from '../text/H1';
-import Label from './Label';
+import Label from '../text/Label';
 import NextButton from '../buttons/NextButton';
 import FirstName from '../inputs/FirstName';
 import LastName from '../inputs/LastName';
