@@ -59,7 +59,7 @@ body {
   font-family: "Azo-Sans";
   color: #94AEBF;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 19px;
 }
 
 #Email-Container  {
@@ -118,8 +118,7 @@ body {
 }
 
 #Submit-Container button {
-  padding: 8px 20px;
-  width: 100%;
+  padding: 8px 30px;
   background: red;
   border: 1px solid red;
   border-radius: 5px;

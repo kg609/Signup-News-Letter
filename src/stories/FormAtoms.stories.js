@@ -1,5 +1,6 @@
 import React from 'react';
 import '../App.css';
+
 import { action } from '@storybook/addon-actions';
 
 export default {
@@ -49,6 +50,20 @@ export const EmailField = () => (
   <div>
     <p>This the email field that each user will be prompted to fill out first before proceeding to the next form component.</p>
       <input style={{ display: "block", width: "50%", padding: "5px", borderRadius: "5px", margin: "70px auto auto"}} placeholder="enter email address" type="text" />
+  </div>
+);
+
+export const FirstNameField = () => (
+  <div>
+    <p>This the first name that each user will be prompted to fill out first before proceeding to the next form component.</p>
+      <input style={{ display: "block", width: "50%", padding: "5px", borderRadius: "5px", margin: "70px auto auto"}} placeholder="enter you first name" type="text" />
+  </div>
+);
+
+export const LastNameField = () => (
+  <div>
+    <p>This the last name field that each user will be prompted to fill out first before proceeding to the next form component.</p>
+      <input style={{ display: "block", width: "50%", padding: "5px", borderRadius: "5px", margin: "70px auto auto"}} placeholder="enter your last name" type="text" />
   </div>
 );
 
