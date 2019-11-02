@@ -1,7 +1,11 @@
+#Signup-Form-Container {
+    margin-top: 150px;
+}
+
 #Submit-Container button {
     width:  150px;
 }
 
 .thank-you-message {
-    text-align: center;;
+    text-align: center;
 }
