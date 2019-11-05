@@ -9,3 +9,13 @@
 .thank-you-message {
     text-align: center;
 }
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
+    #Submit-Container button {
+        width:  100%;
+    }
+  }
