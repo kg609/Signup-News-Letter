@@ -1,0 +1,273 @@
+
+@font-face {
+  font-family: "Elaine_D02";
+  src: url(static/media/Elaine_D02.d817e82f.eot)format("eot");
+  src: 
+  url(static/media/Elaine_D02.7b7d4e51.ttf)format("ttf"),
+  url(static/media/Elaine_D02.f55d13a1.woff)format("woff"),
+  url(static/media/Elaine_D02.3aadfe76.svg)format("svg");
+  }
+
+  @font-face {
+    font-family: "Azo-Sans";
+    src: url(static/media/Azo-Sans.0e7a9d1b.eot);
+    src: 
+    url(static/media/Azo-Sans.b8344010.ttf) format("ttf"),
+    url(static/media/Azo-Sans.88ed9b8a.woff)format("woff"),
+    url(static/media/Azo-Sans.5cd5dd7d.svg)format("svg");
+    }
+
+body {
+  margin: 0;
+}
+
+#Signup-Form-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #120F23;
+  width: 100%;
+  height: 212px;
+  margin: 250px auto;
+}
+
+.signup-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+}
+
+#H1-Container {
+  margin: auto 30px;
+  padding: 20px 0 0 0;
+}
+
+#H1-Container h1 {
+  font-family: "Elaine_D02";
+  color: #B6FDBF;
+  font-size: 60px;
+}
+
+#Sign-Up-Label-Container {
+  position: absolute;
+  left: 33.5%;
+  margin: 30px auto 0;
+}
+
+#Sign-Up-Label-Container label {
+  font-family: "Azo-Sans";
+  color: #94AEBF;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+#Email-Container  {
+  display: flex;
+  align-items: center;
+  width: 500px;
+}
+
+#Email-Container input {
+  width: 100%;
+  border-radius: 5px;
+  border-color: transparent;
+  margin: 10px 0;
+  padding: 10px;
+  background: rgba(102, 102, 102, 0.3);
+  color: #fff;
+  font-family: "Azo-Sans";
+  font-size: 15px;
+}
+
+.input-names-container {
+  display: flex;
+  align-items: center;
+}
+
+#FirstName-Container  {
+  /* width: 50%; */
+  margin-right: 10px;
+}
+
+#FirstName-Container input, #LastName-Container input {
+  /* width: 100%; */
+  border-color: transparent;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 10px;
+  background: rgba(102, 102, 102, 0.3);
+  color: #fff;
+  font-family: "Azo-Sans";
+  font-size: 15px;
+}
+
+.thank-you-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Azo-Sans", sans-serif, serif;
+  color: #94AEBF;
+}
+
+#Submit-Container {
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+  width: 12%;
+}
+
+#Submit-Container button {
+  padding: 8px 30px;
+  background: red;
+  border: 1px solid red;
+  border-radius: 5px;
+  color: white;
+  font-family: "Azo-Sans";
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  width: 100%;
+}
+
+#Checkbox-Container {
+width: 44%;
+margin: -50px -120px 0 0;
+}
+
+#Checkbox-Container small{
+  padding-left: 5px;
+  font-family: "Azo-Sans";
+}
+
+
+#Checkbox-Container  span{
+  display: block;
+  padding-left: 22px;
+}
+
+.checkbox-text{
+  color: #888888;
+}
+
+
+@media only screen and (max-width: 1060px) {
+
+  #Signup-Form-Container {
+    height: 500px;
+  }
+    .signup-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 90%;
+      margin: auto;
+  }
+
+  #H1-Container {
+    height: 60px;
+  }
+
+  #H1-Container h1 {
+    font-size: 36px;
+  }
+
+  #Sign-Up-Label-Container {
+    display: flex;
+    justify-content: center;
+    position: static;
+    width: 90%;
+    text-align: center;
+  }
+
+  #Sign-Up-Label-Container label, #Submit-Container button {
+   font-size: 16px;
+  }
+
+  #Email-Container {
+    display: flex;
+    width: 90%;
+  }
+
+  #Email-Container input,  #Email-Container input::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+
+  #Email-Container input,  #Email-Container input::-moz-placeholder {
+    font-size: 14px;
+  }
+
+  #Email-Container input,  #Email-Container input:-ms-input-placeholder {
+    font-size: 14px;
+  }
+
+  #Email-Container input,  #Email-Container input::-ms-input-placeholder {
+    font-size: 14px;
+  }
+
+  #Email-Container input,  #Email-Container input::placeholder {
+    font-size: 14px;
+  }
+
+  .input-names-container {
+    width: 90%;
+    justify-content: space-evenly;
+  }
+
+  #FirstName-Container, #LastName-Container {
+    width: 50%;
+  }
+
+  #FirstName-Container input, #LastName-Container input {
+    width: 90%;
+  }
+
+  #Submit-Container {
+    width: 90%;
+    padding: 0;
+}
+
+  #Checkbox-Container {
+      width: 90%;
+      margin: 10px 0;
+  } 
+
+  #Checkbox-Container  small{
+    padding-left: 10px;
+    font-size: 12px;
+} 
+
+#Checkbox-Container  span{
+  display: inline;
+  padding-left:  0;
+} 
+
+  .thank-you-message {
+    align-items: center;
+    text-align: center;
+  }
+
+}
+#Signup-Form-Container {
+    margin-top: 150px;
+}
+
+#Submit-Container button {
+    width:  150px;
+}
+
+.thank-you-message {
+    text-align: center;
+}
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
+    #Submit-Container button {
+        width:  100%;
+    }
+  }
+
+/*# sourceMappingURL=main.css.map*/
