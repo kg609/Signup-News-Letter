@@ -34,14 +34,14 @@ export const SignupFormWrapper = () => (
 export const H1Element = () => (
   <div>
     <p>This is the header/tiitle element of the form.</p>
-      <h1 style={{fontFamily: "Elaine_D02", color: "#000", fontSize: "60px", textAlign: "center", marginTop: "70px"}}>join the list</h1>
+      <h1 style={{fontFamily: "Elaine_D02", color: "#000", fontSize: "60px", textAlign: "center", marginTop: "70px", color: "#B6FDBF"}}>join the list</h1>
   </div>
 );
 
 export const SignupText = () => (
   <div>
     <p>This text gives you an idea of what you will be signing up for.</p>
-      <p style={{fontSize: "20px", fontFamily: "Azo-Sans",  textAlign: "center", marginTop: "70px"}}> SIGN UP FOR THE TLC NEWSLETTER.</p>
+      <p style={{fontSize: "20px", fontFamily: "Azo-Sans",  textAlign: "center", marginTop: "70px", color: "#94AEBF"}}> SIGN UP FOR THE TLC NEWSLETTER.</p>
   </div>
 );
 
@@ -49,21 +49,21 @@ export const SignupText = () => (
 export const EmailField = () => (
   <div>
     <p>This the email field that each user will be prompted to fill out first before proceeding to the next form component.</p>
-      <input style={{ display: "block", width: "50%", padding: "5px", borderRadius: "5px", margin: "70px auto auto"}} placeholder="enter email address" type="text" />
+      <input style={{ display: "block", width: "50%", padding: "10px", borderRadius: "5px", margin: "70px auto auto", fontSize: "15px"}} placeholder="enter email address" type="text" />
   </div>
 );
 
 export const FirstNameField = () => (
   <div>
     <p>This the first name that each user will be prompted to fill out first before proceeding to the next form component.</p>
-      <input style={{ display: "block", width: "50%", padding: "5px", borderRadius: "5px", margin: "70px auto auto"}} placeholder="enter you first name" type="text" />
+      <input style={{ display: "block", width: "50%", padding: "10px", borderRadius: "5px", margin: "70px auto auto", fontSize: "15px;"}} placeholder="enter you first name" type="text" />
   </div>
 );
 
 export const LastNameField = () => (
   <div>
     <p>This the last name field that each user will be prompted to fill out first before proceeding to the next form component.</p>
-      <input style={{ display: "block", width: "50%", padding: "5px", borderRadius: "5px", margin: "70px auto auto"}} placeholder="enter your last name" type="text" />
+      <input style={{ display: "block", width: "50%", padding: "10px", borderRadius: "5px", margin: "70px auto auto", fontSize: "15px"}} placeholder="enter your last name" type="text" />
   </div>
 );
 
@@ -79,7 +79,7 @@ export const checkBox= () => (
 export const checkBoxConsentText= () => (
   <div>
     <p>Text ensures that the user understands what they're signing up for and increases company's legal protection.</p>
-    <div style={{textAlign: "center", fontFamily: "Azo-Sans", marginTop: "70px"}}>
+    <div style={{textAlign: "center", fontFamily: "Azo-Sans", marginTop: "70px", color: "#888888"}}>
       <small>I agree to receive information from Discovery Communications 
         <span style={{display: "block"}}> in accordance with the following Privacy Policy</span>
       </small>
@@ -91,7 +91,7 @@ export const SubmitButton= () => (
   <div>
     <p>The form submit button so that the infomation entered by the user can be processed</p>
     <div style={{textAlign: "center", fontFamily: "Azo-Sans", marginTop: "70px"}}>
-      <button onClick={action('clicked the submit button')} style={{padding: "5px 30px", borderRadius: "5px", backgroundColor: "red", border: "none", color: "white"}}>Submit</button>
+      <button onClick={action('clicked the submit button')} style={{padding: "8px 30px", borderRadius: "5px", backgroundColor: "red", border: "none", color: "white", fontSize:"20px"}}>Submit</button>
     </div>
   </div>
 );
