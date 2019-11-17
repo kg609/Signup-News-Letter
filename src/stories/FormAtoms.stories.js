@@ -20,16 +20,16 @@ export const SignupFormWrapper = () => (
   </div>
 );
 
-export const formElement = () => (
-  <div>
-    <p>This is the form element which allows the information entered into the form to be sent to a server to be 
-      stored or reused throughout the application.
-        </p>
-    <form style={divStyle}>
+// export const formElement = () => (
+//   <div>
+//     <p>This is the form element which allows the information entered into the form to be sent to a server to be 
+//       stored or reused throughout the application.
+//         </p>
+//     <form style={divStyle}>
 
-    </form>
-  </div>
-);
+//     </form>
+//   </div>
+// );
 
 export const H1Element = () => (
   <div>
