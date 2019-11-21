@@ -34,7 +34,7 @@ export const SignupFormWrapper = () => (
 export const H1Element = () => (
   <div>
     <p>This is the header/tiitle element of the form.</p>
-      <h1 style={{fontFamily: "Elaine_D02", color: "#000", fontSize: "60px", textAlign: "center", marginTop: "70px", color: "#B6FDBF"}}>join the list</h1>
+      <h1 style={{fontFamily: "Elaine_D02", color: "#B6FDBF", fontSize: "60px", textAlign: "center", marginTop: "70px"}}>join the list</h1>
   </div>
 );
 
