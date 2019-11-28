@@ -1,7 +1,7 @@
 import React from 'react';
 
 import '../App.css';
-import '../css/storybookcss/mstyles.css';
+// import '../css/storybookcss/mstyles.css';
 
 
 import  EmailForm from '../components/form/UserEmailForm';
@@ -11,9 +11,9 @@ import ThankYouPage from '../components/form/ThankYouPage';
 
 
 
-export default {
-  title: 'Mobile Form Pages',
-};
+// export default {
+//   title: 'Mobile Form Pages',
+// };
 
 export const Email = () => (
     <div>

@@ -1,4 +1,6 @@
 import React from 'react';
+import { action } from '@storybook/addon-actions';
+
 import '../App.css';
 import '../css/storybookcss/styles.css';
 
@@ -35,6 +37,7 @@ export const FullName= () => (
     <FullNameForm  
       newHeader = "join the list" 
       labelText = "ALMOST DONE PLEASE ENTER YOUR FIRST AND LAST NAME."
+      
     />
   </div>
 );
