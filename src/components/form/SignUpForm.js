@@ -31,7 +31,7 @@ class SignUpForm extends Component {
         console.log("user's email: " + this.state.email);
         console.log("user's firstname: " +this.state.firstName);
         console.log("user's lastname: " +this.state.lastName);
-        // console.log(this.state.showContent);
+        console.log(this.state);
    }
 
     handleEmail =  (event) => {

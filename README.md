@@ -12,57 +12,45 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
 
-### `npm test`
+## Case Study
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Upon completing this assessment, I was able to increase my skills in the following areas:
 
-### `npm run build`
+* Creating functional, dynamic, and reusable ReactJS components
+* Field Validation
+* Atomic design principles
+* Responsiveness
+* Code Documentation
+* Live UI Documentation
+* Continuous Deployment
+* Git Version Control
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Project Requirements
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+The full breakdown for anyone interested:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+1. Must use either React JS or React Native to complete the project
+2. Must build and run in either a web browser or device simulator
+3. May use third party libraries to complete this task
+4. Organize your component into atoms, molecules and one singular organism in a way that shows you have a good understanding of atomic design principles and reuse
+5. The component will have 4 responsive breakpoints as shown in Sketch file:
+* Mobile
+* Tablet Portrait
+* Tablet Landscape
+* Desktop
+6. The component will have 5 states:
+* Email address collection
+* Email address collection with error message
+* Full name collection
+* Full name collection with error message
+* Congratulations! message
+7. Form validation will be as follows:
+* Email Address field: Required and must be valid email
+* First Name field: Required
+* Last Name field: Required
+8. Component will not change states while invalid fields exist
+9. Form will not actually POST anywhere. Just console log the object that holds {email, first, last } values and toggle to ‘congratulations’ state.
+10. Use Storybook to create an interactive documentation guide for:
+* Each form state
+* Each reusable component
+* Each reusable container
