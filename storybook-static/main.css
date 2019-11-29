@@ -1,20 +1,20 @@
 
 @font-face {
   font-family: "Elaine_D02";
-  src: url("./css/Fonts/Elaine_D02/Elaine_D02.eot")format("eot");
+  src: url(static/media/Elaine_D02.d817e82f.eot)format("eot");
   src: 
-  url("./css/Fonts/Elaine_D02/Elaine_D02.ttf")format("ttf"),
-  url("./css/Fonts/Elaine_D02/Elaine_D02.woff")format("woff"),
-  url("./css/Fonts/Elaine_D02/Elaine_D02.svg")format("svg");
+  url(static/media/Elaine_D02.7b7d4e51.ttf)format("ttf"),
+  url(static/media/Elaine_D02.f55d13a1.woff)format("woff"),
+  url(static/media/Elaine_D02.3aadfe76.svg)format("svg");
   }
 
   @font-face {
     font-family: "Azo-Sans";
-    src: url("./css/Fonts/Azo-Sans/Azo-Sans.eot");
+    src: url(static/media/Azo-Sans.0e7a9d1b.eot);
     src: 
-    url("./css/Fonts/Azo-Sans/Azo-Sans.ttf") format("ttf"),
-    url("./css/Fonts/Azo-Sans/Azo-Sans.woff")format("woff"),
-    url("./css/Fonts/Azo-Sans/Azo-Sans.svg")format("svg");
+    url(static/media/Azo-Sans.b8344010.ttf) format("ttf"),
+    url(static/media/Azo-Sans.88ed9b8a.woff)format("woff"),
+    url(static/media/Azo-Sans.5cd5dd7d.svg)format("svg");
     }
 
 body {
@@ -53,7 +53,6 @@ body {
   position: absolute;
   left: 33.5%;
   margin: 30px auto 0;
-  width: 100%;
 }
 
 #Sign-Up-Label-Container label {
@@ -190,6 +189,22 @@ margin: -50px -120px 0 0;
     width: 90%;
   }
 
+  #Email-Container input,  #Email-Container input::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+
+  #Email-Container input,  #Email-Container input::-moz-placeholder {
+    font-size: 14px;
+  }
+
+  #Email-Container input,  #Email-Container input:-ms-input-placeholder {
+    font-size: 14px;
+  }
+
+  #Email-Container input,  #Email-Container input::-ms-input-placeholder {
+    font-size: 14px;
+  }
+
   #Email-Container input,  #Email-Container input::placeholder {
     font-size: 14px;
   }
@@ -233,3 +248,26 @@ margin: -50px -120px 0 0;
   }
 
 }
+#Signup-Form-Container {
+    margin-top: 150px;
+}
+
+#Submit-Container button {
+    width:  150px;
+}
+
+.thank-you-message {
+    text-align: center;
+}
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
+    #Submit-Container button {
+        width:  100%;
+    }
+  }
+
+/*# sourceMappingURL=main.css.map*/

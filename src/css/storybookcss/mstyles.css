@@ -1,0 +1,77 @@
+#Signup-Form-Container {
+    height: 500px;
+  }
+    .signup-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 90%;
+      margin: auto;
+  }
+
+  #H1-Container {
+    height: 60px;
+  }
+
+  #H1-Container h1 {
+    font-size: 36px;
+  }
+
+  #Sign-Up-Label-Container {
+    display: flex;
+    justify-content: center;
+    position: static;
+    width: 90%;
+    text-align: center;
+  }
+
+  #Sign-Up-Label-Container label, #Submit-Container button {
+   font-size: 16px;
+  }
+
+  #Email-Container {
+    display: flex;
+    width: 90%;
+  }
+
+  #Email-Container input,  #Email-Container input::placeholder {
+    font-size: 14px;
+  }
+
+  .input-names-container {
+    width: 90%;
+    justify-content: space-evenly;
+  }
+
+  #FirstName-Container, #LastName-Container {
+    width: 50%;
+  }
+
+  #FirstName-Container input, #LastName-Container input {
+    width: 90%;
+  }
+
+  #Submit-Container {
+    width: 90%;
+    padding: 0;
+}
+
+  #Checkbox-Container {
+      width: 90%;
+      margin: 10px 0;
+  } 
+
+  #Checkbox-Container  small{
+    padding-left: 10px;
+    font-size: 12px;
+} 
+
+#Checkbox-Container  span{
+  display: inline;
+  padding-left:  0;
+} 
+
+  .thank-you-message {
+    align-items: center;
+    text-align: center;
+  }
