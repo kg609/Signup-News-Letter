@@ -25,7 +25,7 @@ Upon completing this assessment, I was able to increase my skills in the followi
 * Continuous Deployment
 * Git Version Control
 
-! [] (src/images/signupNewsletterWalkthrough.gif)
+![signupNewsletterWalkthrough](https://user-images.githubusercontent.com/23228282/69906835-af48e180-1397-11ea-8d89-7808e29d3137.gif)
 
 ## Project Requirements
 
