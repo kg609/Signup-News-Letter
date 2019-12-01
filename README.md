@@ -12,6 +12,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
 
+![signupNewsletterWalkthrough2](https://user-images.githubusercontent.com/23228282/69907572-38b2e080-13a5-11ea-86da-f6d03a6e42c6.gif)
+
 ## Case Study
 
 Upon completing this assessment, I was able to increase my skills in the following areas:
@@ -24,8 +26,6 @@ Upon completing this assessment, I was able to increase my skills in the followi
 * Live UI Documentation
 * Continuous Deployment
 * Git Version Control
-
-![signupNewsletterWalkthrough](https://user-images.githubusercontent.com/23228282/69906835-af48e180-1397-11ea-8d89-7808e29d3137.gif)
 
 ## Project Requirements
 
