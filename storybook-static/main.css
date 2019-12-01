@@ -53,6 +53,7 @@ body {
   position: absolute;
   left: 33.5%;
   margin: 30px auto 0;
+  width: 100%;
 }
 
 #Sign-Up-Label-Container label {
