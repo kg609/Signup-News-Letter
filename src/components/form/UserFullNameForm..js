@@ -17,17 +17,25 @@ class UserFullNameForm extends Component {
     }
 
     render(){
+        const {
+            newHeader,
+            labelText,
+            firstName,
+            lastName,
+            handleClick
+        } = this.props;
+
         return (
                 <div id="Signup-Form-Container">
                      <form onSubmit={this.continue} style={formWidth}>
                         <div className="signup-form">
-                            <H1 newH1 = {this.props.newHeader} />
-                            <Label Text = {this.props.labelText} style={lblPos} />
+                            <H1 newH1 = { newHeader } />
+                            <Label Text = { labelText } style={lblPos} />
                             <div className="input-names-container" >
-                                <FirstName firstName  = {this.props.firstName} />
-                                <LastName lastName = {this.props.lastName} />
+                                <FirstName firstName  = { firstName } />
+                                <LastName lastName = {lastName} />
                             </div>
-                                <NextButton onClick= {this.props.handleClick}   />
+                                <NextButton onClick= {handleClick}   />
                         </div>
                         
                     </form>

@@ -16,14 +16,19 @@ class UserEmailForm extends Component {
     }
 
     render(){
-        return (
-            
+       const {          
+            newHeader,
+            labelText,
+            email
+        }  =  this.props;
+
+        return (           
                 <div id="Signup-Form-Container">
                     <form onSubmit={this.continue}>
                         <div className="signup-form">
-                            <H1 newH1 = {this.props.newHeader} />
-                            <Label Text = {this.props.labelText} />
-                            <Email userEmail = {this.props.email}  />
+                            <H1 newH1 = { newHeader } />
+                            <Label Text = { labelText } />
+                            <Email userEmail = { email }  />
                             <NextButton  /> 
                             <CheckBox/>
                         </div>
